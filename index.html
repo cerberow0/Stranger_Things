@@ -18,8 +18,20 @@
 </style>
 
 <body>
-    <header><img src="./logo.jpg" class="img-thumbnail" alt="" width="200px" height="200px">
-        <h1 style="text-align: center;">SUPERFLIGHT 🛬</h1>
+    <header>
+        <div class="row">
+            <div class="col-5">
+                <img src="./logo.jpg" alt="" width="200px" height="200px">
+            </div>
+            <div class="col-6">
+                <h1>SUPERFLIGHT 🛬</h1>
+            </div>
+        </div>
+        <main style="text-align: center;">
+            <a href="">Home</a>
+            <a href="">Tickets</a>
+            <a href="">Flyes</a>
+        </main>
     </header>
     <br>
     <hr>
@@ -27,15 +39,14 @@
         <div class="col-4"><img src="./t1.jpg" alt="" width="500px" height="360px">
             <br>
             <br>
-            <select class="form-select" style="max-width: 40%;" aria-label="Default select example" id="ciudad">
-                <option selected> selecciona la ciudad:</option>
+            <select class="form-select" style="max-width: 30%;" aria-label="Default select example">
+                <option selected>Ciudades</option>
                 <option value="1">Cartago</option>
                 <option value="2">Pereira</option>
-                <option value="3">Bogota</option>
-                <option value="4">Medellin</option>
+                <option value="3">Tulua</option>
+                <option value="4">Manizales</option>
+                <option value="5">Cali</option>
             </select>
-
-
         </div>
 
         <div class="col-4">
@@ -47,6 +58,9 @@
             <input type="button" value="Liquidar Tiquete">
             <br>
             <img src="./t2.jpg" alt="" width="420px" height="190px">
+            <br><br><br><br><br>
+            <label for="CalcularTotal">Calcular el total a pagar</label>
+            <input type="submit" value="CalcularTotal" onclick="CalcularTotal()">
         </div>
         <div class="col-4">
             <h1>Prueba tu suerte..</h1>
@@ -54,8 +68,17 @@
 
         </div>
     </div>
-    <script src="./datos/prueba.js"></script>
-    <script src="./main.js"></script>
+    <br>
+    <footer style="background-color: gray;">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores esse facilis inventore, rerum nam voluptatibus
+        neque ad quis, laboriosam debitis consequatur deserunt blanditiis fuga optio quos! Soluta architecto iure
+        accusamus!
+        Quis atque sed consectetur perferendis, porro provident rem illo possimus, expedita dolorum, repellat ea nulla.
+        Dolorum quod, voluptas cupiditate rem aperiam doloribus autem nisi. Consequuntur unde odio quam ad? Impedit!
+        Id error totam aspernatur corrupti voluptatibus deleniti quaerat consequuntur ad omnis qui, possimus nobis
+        quidem? Nobis, perferendis esse sapiente cum nostrum porro vel eaque! Aliquam cumque optio corporis voluptatibus
+        veritatis.
+    </footer>
 </body>
 
 </html>
