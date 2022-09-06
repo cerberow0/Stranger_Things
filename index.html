@@ -21,10 +21,12 @@
     <header>
         <div class="row">
             <div class="col-5">
-                <img src="./logo.jpg" alt="" width="200px" height="200px">
+                <img class="rounded-circle" src="./logo.jpg" alt="" width="200px" height="200px">
             </div>
             <div class="col-6">
-                <h1>SUPERFLIGHT 🛬</h1>
+                <marquee behavior="" direction="">
+                    <h1>SUPERFLIGHT 🛬</h1>
+                </marquee>
             </div>
         </div>
         <main style="text-align: center;">
@@ -36,7 +38,7 @@
     <br>
     <hr>
     <div class="row">
-        <div class="col-4"><img src="./t1.jpg" alt="" width="500px" height="360px">
+        <div class="col-4 "><img class="rounded-pill" src=" ./t1.jpg" alt="" width="500px" height="360px">
             <br>
             <br>
             <select class="form-select" style="max-width: 30%;" aria-label="Default select example">
@@ -47,7 +49,8 @@
                 <option value="4">Manizales</option>
                 <option value="5">Cali</option>
             </select>
-            <button type="submit" onclick="Ciudades()">enviar</button>
+            <br>
+            <button type="button" class="btn btn-primary rounded-pill">Enviar</button>
         </div>
 
         <div class="col-4">
@@ -56,29 +59,29 @@
             </h1>
             <br>
             <input type="text" name="liquidar" id="liquidar">
-            <input type="button" value="LiquidarTiquete">
+            <button type="button" class="btn btn-primary rounded-pill">Enviar</button>
             <br>
-            <img src="./t2.jpg" alt="" width="420px" height="190px">
+            <img class="rounded" src=" ./t2.jpg" alt="" width="420px" height="190px">
+            <br><br>
+            <p>Ingrese peso del equipaje :</p>
+            <input type="text" name="peso" id="peso">
+            <button type="button" class="btn btn-primary rounded-pill">Enviar</button>
             <br><br><br><br><br>
-            <label for="CalcularTotal">Calcular el total a pagar</label>
-            <input type="submit" value="CalcularTotal" onclick="CalcularTotal()">
+            <label for="CalcularTotal">Calcular el total a pagar :</label>
+            <button type="button" class="btn btn-primary rounded-pill">Enviar</button>
         </div>
         <div class="col-4">
             <h1>Prueba tu suerte..</h1>
-            <img src="./t3.jpg" alt="">
+            <img class="rounded" src=" ./t3.jpg" alt="">
 
         </div>
     </div>
     <br>
-    <footer style="background-color: gray;">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores esse facilis inventore, rerum nam voluptatibus
-        neque ad quis, laboriosam debitis consequatur deserunt blanditiis fuga optio quos! Soluta architecto iure
-        accusamus!
-        Quis atque sed consectetur perferendis, porro provident rem illo possimus, expedita dolorum, repellat ea nulla.
-        Dolorum quod, voluptas cupiditate rem aperiam doloribus autem nisi. Consequuntur unde odio quam ad? Impedit!
-        Id error totam aspernatur corrupti voluptatibus deleniti quaerat consequuntur ad omnis qui, possimus nobis
-        quidem? Nobis, perferendis esse sapiente cum nostrum porro vel eaque! Aliquam cumque optio corporis voluptatibus
-        veritatis.
+    <footer>
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+            <p>&copy; Realizado por los aprendices:
+                Nicolas valencia - Karol Liceth.</p>
+        </div>
     </footer>
 </body>
 
