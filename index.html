@@ -38,10 +38,10 @@
     <br>
     <hr>
     <div class="row">
-        <div class="col-4 "><img class="rounded-pill" src=" ./t1.jpg" alt="" width="500px" height="360px">
+        <div class="col-4 "><img class="rounded-pill" src="giphy.gif" alt="" width="500px" height="360px">
             <br>
             <br>
-            <select class="form-select" style="max-width: 30%;" aria-label="Default select example">
+            <select class="form-select" style="max-width: 30%;" aria-label="Default select example" id="ciudades">
                 <option selected>Ciudades</option>
                 <option value="1">Cartago</option>
                 <option value="2">Pereira</option>
@@ -50,7 +50,7 @@
                 <option value="5">Cali</option>
             </select>
             <br>
-            <button type="button" class="btn btn-primary rounded-pill">Enviar</button>
+            <button type="button" class="btn btn-primary rounded-pill" onclick="ciudades()">Enviar</button>
         </div>
 
         <div class="col-4">
@@ -58,17 +58,22 @@
                 Cantidad de pasajeros
             </h1>
             <br>
-            <input type="text" name="liquidar" id="liquidar">
-            <button type="button" class="btn btn-primary rounded-pill">Enviar</button>
+            <input type="text" name="cantidad" id="cantidad">
+            <button type="button" class="btn btn-primary rounded-pill" onclick="cantidad()">Enviar</button>
+            <br>
             <br>
             <img class="rounded" src=" ./t2.jpg" alt="" width="420px" height="190px">
             <br><br>
             <p>Ingrese peso del equipaje :</p>
             <input type="text" name="peso" id="peso">
-            <button type="button" class="btn btn-primary rounded-pill">Enviar</button>
+            <button type="button" class="btn btn-primary rounded-pill" onclick="peso()">Enviar</button>
+            <br>
+            <p>Ingrese tipo de asiento:</p>
+            <input type="text" name="silla" id="silla">
+            <button type="button" class="btn btn-primary rounded-pill" onclick="silla()">Enviar</button>
             <br><br><br><br><br>
             <label for="CalcularTotal">Calcular el total a pagar :</label>
-            <button type="button" class="btn btn-primary rounded-pill">Enviar</button>
+            <button type="button" class="btn btn-primary rounded-pill" onclick="total()">Enviar</button>
         </div>
         <div class="col-4">
             <h1>Prueba tu suerte..</h1>
