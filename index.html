@@ -30,7 +30,7 @@
             </div>
         </div>
         <main style="text-align: center;">
-            <a href="">Home</a>
+            <a href="index.html">Home</a>
             <a href="">Tickets</a>
             <a href="">Flyes</a>
         </main>
@@ -41,8 +41,8 @@
         <div class="col-4 "><img class="rounded-pill" src="giphy.gif" alt="" width="500px" height="360px">
             <br>
             <br>
+            <p>Selecciona tu Destino :</p>
             <select class="form-select" style="max-width: 30%;" aria-label="Default select example" id="lugares">
-                <option selected>Ciudades</option>
                 <option value="1">Cartago</option>
                 <option value="2">Pereira</option>
                 <option value="3">Tulua</option>
@@ -50,7 +50,7 @@
                 <option value="5">Cali</option>
             </select>
             <br>
-            <button type="button" class="btn btn-primary rounded-pill" onclick="ciudades()">Enviar</button>
+
         </div>
 
         <div class="col-4">
@@ -58,19 +58,26 @@
                 Cantidad de pasajeros
             </h1>
             <br>
-            <input type="text" name="cantidad" id="cantidad">
-            <button type="button" class="btn btn-primary rounded-pill" onclick="cantidad()">Enviar</button>
+            <input type="text" name="cantidad" id="cantidad" placeholder="cantidad">
             <br>
             <br>
             <img class="rounded" src=" ./t2.jpg" alt="" width="420px" height="190px">
+            <br>
+            <div class="totalIndex" id="totalIndex">
+
+            </div>
             <br><br>
             <p>Ingrese peso del equipaje :</p>
-            <input type="text" name="peso" id="peso">
-            <button type="button" class="btn btn-primary rounded-pill" onclick="peso()">Enviar</button>
+            <input type="text" name="peso" id="peso" placeholder="kg">
+            <br>
             <br>
             <p>Ingrese tipo de asiento:</p>
-            <input type="text" name="silla" id="silla">
-            <button type="button" class="btn btn-primary rounded-pill" onclick="silla()">Enviar</button>
+            <select class="form-select" style="max-width: 30%;" aria-label="Default select example" id="silla">
+                <option value="1">normal</option>
+                <option value="2">ejecutiva</option>
+                <option value="3">vip</option>
+            </select>
+
             <br><br><br><br><br>
             <label for="CalcularTotal">Calcular el total a pagar :</label>
             <button type="button" class="btn btn-primary rounded-pill" onclick="total()">Enviar</button>
